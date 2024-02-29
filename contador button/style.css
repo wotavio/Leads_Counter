@@ -17,7 +17,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column; /* Mudança para coluna */
 }
 
 h1 {
@@ -32,6 +32,11 @@ h1 {
     flex-direction: column;
 }
 
+.counters-container {
+    display: flex; /* Adicionado para colocar as boxes lado a lado */
+    justify-content: center; /* Adicionado para centralizar horizontalmente */
+}
+
 .counter {
     background-color: #121214;
     padding: 2rem;
@@ -43,6 +48,29 @@ h1 {
 .counter > div {
     display: flex;
     align-items: center;
+}
+
+.total-box {
+    align-items: center;
+    background-color: rgb(255, 0, 0);
+    width: 15vw;
+    height: 4vw;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+}
+
+.total-value {
+    align-items: center;
+    padding-left: 2vw;
+    font-size: 3em;
+    color: #ffffff;
+}
+.total-valuee {
+    align-items: center;
+    padding-left: 3vw;
+    font-size: 2em;
+    color: #ffffff;
 }
 
 .value {
